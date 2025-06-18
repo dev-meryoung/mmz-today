@@ -5,14 +5,14 @@ export const metadata: Metadata = {
   description: '오늘 뭐 먹을까 고민될 때, 오늘 뭐 먹지?',
 };
 
-export default function RootLayout({
+const RootLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
-  return (
-    <html lang="ko">
-      <body>{children}</body>
-    </html>
-  );
-}
+}>) => (
+  <html lang='ko'>
+    <body>{children}</body>
+  </html>
+);
+
+export default RootLayout;
